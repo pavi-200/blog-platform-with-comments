@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand">BlogHub</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="login.html" id="loginLink">Login</a>
+          <a href="#" id="logoutLink" class="hidden">Logout</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Modern blogging platform</p>
+            <h1>Share ideas, stories, and thoughtful commentary.</h1>
+            <p>Create posts, manage your content, and discuss topics with readers in one polished space.</p>
+            <a href="register.html" class="btn btn-primary">Get Started</a>
+          </div>
+          <div class="hero-card">
+            <h3>Why creators love it</h3>
+            <ul>
+              <li>Secure authentication</li>
+              <li>Beautiful responsive design</li>
+              <li>Built-in comments and search</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="container content-grid">
+        <div class="main-column">
+          <div class="section-header">
+            <h2>Latest Posts</h2>
+            <input id="searchInput" type="text" placeholder="Search posts..." />
+          </div>
+          <div id="postsContainer" class="posts-grid"></div>
+          <div id="loader" class="loader hidden">Loading...</div>
+        </div>
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h3>Latest Posts</h3>
+            <ul id="latestPostsList"></ul>
+          </div>
+          <div class="sidebar-card">
+            <h3>Categories</h3>
+            <ul>
+              <li>General</li>
+              <li>Technology</li>
+              <li>Travel</li>
+              <li>Design</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© 2026 BlogHub. Built with Node.js, Express, MongoDB, and Vanilla JavaScript.</div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/posts.js"></script>
+  </body>
+</html>

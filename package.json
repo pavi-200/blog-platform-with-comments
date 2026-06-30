@@ -1,0 +1,10 @@
+{
+  "name": "blog-platform-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm start",
+    "install:backend": "cd backend && npm install"
+  }
+}

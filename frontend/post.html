@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post | Blog Platform</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand">BlogHub</a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="login.html" id="loginLink">Login</a>
+          <a href="#" id="logoutLink" class="hidden">Logout</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container detail-page">
+      <article id="singlePostContent" class="post-detail"></article>
+      <section class="comments-section">
+        <h2>Comments</h2>
+        <form id="commentForm" class="comment-form">
+          <textarea id="commentInput" rows="4" placeholder="Write a comment..."></textarea>
+          <button type="submit" class="btn btn-primary">Post Comment</button>
+        </form>
+        <div id="commentsList"></div>
+      </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/comments.js"></script>
+    <script src="js/posts.js"></script>
+  </body>
+</html>

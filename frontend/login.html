@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Blog Platform</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand">BlogHub</a>
+      </div>
+    </header>
+
+    <main class="auth-page">
+      <div class="auth-card">
+        <div class="auth-tabs" role="tablist" aria-label="Authentication mode">
+          <button type="button" class="tab-btn active" data-target="loginFormPanel">Login</button>
+          <button type="button" class="tab-btn" data-target="registerFormPanel">Register</button>
+        </div>
+
+        <div id="loginFormPanel" class="auth-panel active">
+          <h2>Welcome back</h2>
+          <p>Sign in to your account with your email and password.</p>
+          <form id="loginForm" class="auth-form">
+            <input type="email" id="loginEmail" name="email" placeholder="Email" autocomplete="email" required />
+            <input type="password" id="loginPassword" name="password" placeholder="Password" autocomplete="current-password" required />
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+
+        <div id="registerFormPanel" class="auth-panel">
+          <h2>Create an account</h2>
+          <p>Register with your email and password to start publishing.</p>
+          <form id="registerForm" class="auth-form">
+            <input type="text" id="registerName" name="name" placeholder="Name" required />
+            <input type="email" id="registerEmail" name="email" placeholder="Email" autocomplete="email" required />
+            <input type="password" id="registerPassword" name="password" placeholder="Password" autocomplete="new-password" required />
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>

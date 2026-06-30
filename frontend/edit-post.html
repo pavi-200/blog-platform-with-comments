@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Post | Blog Platform</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand">BlogHub</a>
+      </div>
+    </header>
+
+    <main class="container form-page">
+      <h1>Edit Post</h1>
+      <form id="editPostForm" class="form-card">
+        <input type="text" id="editTitle" placeholder="Post title" required />
+        <textarea id="editContent" rows="8" placeholder="Write your post..." required></textarea>
+        <input type="text" id="editCategory" placeholder="Category" />
+        <input type="file" id="editImage" accept="image/*" />
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+      </form>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/posts.js"></script>
+  </body>
+</html>
